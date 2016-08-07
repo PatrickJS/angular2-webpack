@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 var resolveNgRoute = require('@angularclass/resolve-angular-routes');
 
-function loaders() {
+exports.loaders = function loaders() {
   return {
     test: /(systemjs_component_resolver|system_js_ng_module_factory_loader)\.js$/,
     loader: 'string-replace-loader',
@@ -12,16 +12,12 @@ function loaders() {
     }
   }
 }
-exports.loaders = loaders;
 
-function plugins(rootDir) {
+exports.plugins = function plugins(rootDir) {
   var plugin = new webpack.ContextReplacementPlugin(
     /angular\/core\/src\/linker/,
     rootDir,
     resolveNgRoute(rootDir)
   );
-  return ,
-    // end angular2 fix
- ]
+  return plugin;
 }
-exports.plugins = plugins;
