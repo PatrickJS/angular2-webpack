@@ -15,7 +15,7 @@ exports.loaders = function loaders() {
 
 exports.plugins = function plugins(rootDir) {
   var plugin = new webpack.ContextReplacementPlugin(
-    /angular\/core\/src\/linker/,
+    /angular\/core\/(esm\/src|src)\/linker/,
     rootDir,
     resolveNgRoute(rootDir)
   );
