@@ -1,0 +1,26 @@
+{
+  "name": "angular2-webpack",
+  "version": "1.0.0",
+  "description": "Angular 2 fixes for Webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gdi2290/angular2-webpack.git"
+  },
+  "author": "PatrickJS <patrick@angularclass.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/gdi2290/angular2-webpack/issues"
+  },
+  "homepage": "https://github.com/gdi2290/angular2-webpack#readme",
+  "dependencies": {
+    "@angularclass/resolve-angular-routes": "^1.0.8",
+    "string-replace-loader": "github:gdi2290/string-replace-loader"
+  },
+  "devDependencies": {
+    "webpack": "^2.1.0-beta.20"
+  }
+}
